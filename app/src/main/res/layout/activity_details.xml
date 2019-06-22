@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="NamespaceTypo">
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fname"
+        android:text="Name"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="Description:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fdescription"
+        android:text="Description"
+        android:layout_below="@id/description"
+        android:paddingHorizontal="30dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetime"
+        android:text="DateTime:"
+        android:layout_below="@id/fdescription"
+        android:paddingHorizontal="30dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fdatetime"
+        android:text="DateTime"
+        android:layout_below="@id/datetime"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Location:"
+        android:layout_below="@id/fdatetime"
+        android:paddingHorizontal="30dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flocation"
+        android:text="Location"
+        android:layout_below="@id/location"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:textSize="22dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/update" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/colorError"
+            android:layout_toLeftOf="@+id/update"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/delete"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
